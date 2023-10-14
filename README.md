@@ -18,7 +18,7 @@ No mundo dos sistemas de gerenciamento de banco de dados, o PostgreSQL é amplam
 
 ### Exemplo de uma entidade com atributo, simple, composto e multivalorado:
 
-## Entidad: Libro
+## Entidad: Livro
 
 ### Atributos Simples
 - Título (String)
