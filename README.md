@@ -15,3 +15,24 @@ Uma das características notáveis do PostgreSQL é seu suporte a consultas comp
 Além disso, o PostgreSQL tem uma comunidade ativa e oferece suporte para várias extensões e plugins, tornando-o altamente flexível e personalizável de acordo com as necessidades de cada projeto.
 
 No mundo dos sistemas de gerenciamento de banco de dados, o PostgreSQL é amplamente reconhecido e respeitado por sua confiabilidade e desempenho, o que o torna uma escolha popular entre desenvolvedores e empresas.
+
+### Exemplo de uma entidade com atributo, simple, composto e multivalorado:
+
+## Entidad: Libro
+
+### Atributos Simples
+- Título (String)
+- Autor (String)
+- Género (String)
+- ISBN (Clave Primaria, String)
+
+### Atributos Compuestos
+- Capítulos (Lista de Capítulos)
+
+### Atributos Multivalorados
+- Palabras Clave (Lista de Palabras Clave)
+
+### Relaciones
+- Avaliaciones (1 a muchos)
+- Autor (1 a 1)
+- Editora (1 a 1)
