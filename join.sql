@@ -48,4 +48,10 @@ TRANSFERENCIA
 RIGHT JOIN cliente ON TRANSFERENCIA.id_cliente = cliente.id_cliente;
 
 
-
+----TRIGGER
+CREATE OR REPLACE FUNCTION after_transferencia_insert()
+RETURNS TRIGGER AS $$
+BEGIN
+  RAISE NOTICE '¡Transferencia registrada!';
+  RETURN NEW;
+END;
