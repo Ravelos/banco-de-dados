@@ -55,3 +55,8 @@ BEGIN
   RAISE NOTICE '¡Transferencia registrada!';
   RETURN NEW;
 END;
+---Ascociação com a tabela transferência
+CREATE TRIGGER transferencia_after_insert
+AFTER INSERT ON TRANSFERENCIA
+FOR EACH ROW
+EXECUTE FUNCTION after_transferencia_insert();
